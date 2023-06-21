@@ -3,33 +3,68 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: sans-serif; }
 
-.navbar {
+header {
   display: flex;
   justify-content: space-between;
   background-color: black;
   align-items: center;
-  padding: 13px; }
-  .navbar .navbarLogo {
-    width: 80px;
+  padding: 18px; }
+  header .navbarLogo {
+    max-width: 5rem;
     margin-left: 40px; }
-    .navbar .navbarLogo img {
-      width: 100%; }
-  .navbar .navbarNavegacion {
+  header .navbarNavegacion {
     display: flex;
-    justify-content: space-between; }
-    @media screen and (max-width: 768px) {
-      .navbar .navbarNavegacion {
-        display: none; } }
-    .navbar .navbarNavegacion a {
-      color: gray;
-      margin-right: 40px;
+    justify-content: space-between;
+    gap: 2rem; }
+    header .navbarNavegacion li {
+      transition: all 200ms ease-in-out; }
+      header .navbarNavegacion li:hover {
+        transform: scale(1.2); }
+    header .navbarNavegacion a {
+      color: #b2b2b2;
       transition: all 200ms ease-in-out;
       border-bottom: 2px solid gray;
       text-decoration: none;
       font-size: 16px; }
-      .navbar .navbarNavegacion a:hover {
+      header .navbarNavegacion a:hover {
         color: white;
-        border-color: rgba(0, 0, 0, 0);
-        transform: scale(1.2); }
+        border-color: red; }
+  header .abrirMenu,
+  header .cerrarMenu {
+    display: none; }
+  @media screen and (max-width: 740px) {
+    header .abrirMenu,
+    header .cerrarMenu {
+      display: block;
+      border: 0;
+      font-size: 1.25rem;
+      color: white;
+      background-color: transparent;
+      cursor: pointer; }
+    header .navbar {
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 1rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #3c3c3c;
+      padding: 2rem;
+      box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5); }
+    header .navbar.visible {
+      opacity: 1;
+      visibility: visible; }
+    header .navbarNavegacion {
+      flex-direction: column;
+      align-items: end; }
+      header .navbarNavegacion a {
+        color: #b0b0b0; }
+        header .navbarNavegacion a:hover {
+          color: white; } }
