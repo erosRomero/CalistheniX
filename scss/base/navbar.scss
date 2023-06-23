@@ -1,9 +1,9 @@
 header {
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: rgb(26, 26, 26);
     align-items: center;
-    padding: 18px;
+    padding: 15px;
 
     .navbarLogo {
         max-width: 5rem;
@@ -26,7 +26,7 @@ header {
         a {
             color: rgb(178, 178, 178);
             transition: all 200ms ease-in-out;
-            border-bottom: 2px solid gray;
+            border-bottom: 2px solid rgb(178, 178, 178);
             text-decoration: none;
             font-size: 16px;
 
@@ -42,7 +42,7 @@ header {
         display: none;
     }
 
-    @media screen and (max-width: 740px) {
+    @media screen and (max-width: 850px) {
 
         .abrirMenu,
         .cerrarMenu {

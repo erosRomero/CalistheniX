@@ -9,9 +9,9 @@
 header {
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  background-color: #1a1a1a;
   align-items: center;
-  padding: 18px; }
+  padding: 15px; }
   header .navbarLogo {
     max-width: 5rem;
     margin-left: 40px; }
@@ -26,7 +26,7 @@ header {
     header .navbarNavegacion a {
       color: #b2b2b2;
       transition: all 200ms ease-in-out;
-      border-bottom: 2px solid gray;
+      border-bottom: 2px solid #b2b2b2;
       text-decoration: none;
       font-size: 16px; }
       header .navbarNavegacion a:hover {
@@ -35,7 +35,7 @@ header {
   header .abrirMenu,
   header .cerrarMenu {
     display: none; }
-  @media screen and (max-width: 740px) {
+  @media screen and (max-width: 850px) {
     header .abrirMenu,
     header .cerrarMenu {
       display: block;
@@ -68,3 +68,81 @@ header {
         color: #b0b0b0; }
         header .navbarNavegacion a:hover {
           color: white; } }
+
+.inicio {
+  background-color: black; }
+  .inicio .inicioFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px; }
+    .inicio .inicioFlex .inicioPresentacion {
+      color: white;
+      width: 50%;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center; }
+      .inicio .inicioFlex .inicioPresentacion h1 {
+        text-align: center;
+        padding-bottom: 15px;
+        font-size: 45px; }
+      .inicio .inicioFlex .inicioPresentacion p {
+        width: 65%;
+        text-align: center;
+        padding-top: 15px;
+        font-size: 25px; }
+    .inicio .inicioFlex .inicioImg {
+      width: 50%; }
+      .inicio .inicioFlex .inicioImg .imagenIni {
+        width: 80%;
+        border-radius: 20px;
+        border: solid 1px white; }
+  @media screen and (max-width: 1150px) {
+    .inicio .inicioFlex {
+      flex-flow: column nowrap; }
+      .inicio .inicioFlex .inicioImg {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 15px; }
+        .inicio .inicioFlex .inicioImg .imagenIni {
+          width: 80%; }
+      .inicio .inicioFlex .inicioPresentacion {
+        width: 100%; }
+        .inicio .inicioFlex .inicioPresentacion p {
+          width: 100%;
+          padding-top: 15px; } }
+
+.sobreNosotros {
+  background-color: black; }
+  .sobreNosotros .sobreNosotrosFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px; }
+    .sobreNosotros .sobreNosotrosFlex .sobreNosotrosPresentacion {
+      color: white;
+      width: 50%;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center; }
+      .sobreNosotros .sobreNosotrosFlex .sobreNosotrosPresentacion h1 {
+        text-align: center;
+        padding-bottom: 15px;
+        font-size: 45px; }
+      .sobreNosotros .sobreNosotrosFlex .sobreNosotrosPresentacion p {
+        width: 65%;
+        text-align: center;
+        padding-top: 15px;
+        font-size: 25px; }
+    .sobreNosotros .sobreNosotrosFlex .sobreNosotrosImg {
+      width: 50%; }
+      .sobreNosotros .sobreNosotrosFlex .sobreNosotrosImg img {
+        width: 80%;
+        border-radius: 20px;
+        border: solid 1px white; }
+
+.linea {
+  color: black; }
